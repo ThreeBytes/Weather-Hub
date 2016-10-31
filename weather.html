@@ -1,0 +1,45 @@
+<html>
+<head>
+<title>Weather</title>
+    <meta charset="utf-8">
+	<script src="http://code.jquery.com/jquery-1.7.min.js" ></script>
+    <script src="http://code.jquery.com/ui/1.7.0/jquery-ui.js" ></script>
+	<script type="text/javascript" src="getweather.js"></script>
+	<link rel="stylesheet" type="text/css" href="mystyle.css">
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+   
+</head>
+<body>	
+<div id="page-wrap">
+<h1 id="header"> 
+	<i class="fa fa-cloud"></i> 
+	Weather Hub 
+</h1>
+
+	
+  <form id="weather_status_form">
+    <label for="city">City</label>
+    <input type="text" id="weather_city" name="city" value = "Bangalore"/>
+	</br>
+	<br>
+    <label for="units">Units</label>
+    <input type="radio" id="units_metric" name="units" value="metric"  checked="checked"/> Metric
+    <input type="radio" id="units_imperial" name="units" value="imperial"/> Imperial
+	</br>
+	</br>
+    <button type="button" id="btn">Check</button>
+  </form>
+ <hr>
+  <p id="weather_description"></p>
+  <p><i class="fa fa-sun-o"></i> Temperature: <span id="weather_temp"></span></p>
+  <p><i class="fa fa-flag"></i> Wind speed: <span id="weather_wind"></span></p>
+</div>
+   
+
+
+
+
+</body>
+</html>
