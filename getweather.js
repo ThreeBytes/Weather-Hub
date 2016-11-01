@@ -23,7 +23,7 @@
     // Fetch the data from the public API through JSONP.
     // See http://openweathermap.org/API#weather.
     $.ajax({
-      url: 'http://api.openweathermap.org/data/2.5/weather',
+      url: 'https://api.openweathermap.org/data/2.5/weather',
       jsonp: 'callback',
       dataType: 'jsonp',
       cache: false,
